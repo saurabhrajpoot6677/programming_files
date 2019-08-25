@@ -13,10 +13,7 @@ def func(s):
         print("NO")
          
 n=int(input(""))
-l3=[]
 for i in range(0,n):
     s=input("")
-    l3.append(s)
-for i in l3:
-    func(i)
+    func(s)
 

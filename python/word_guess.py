@@ -7,7 +7,7 @@ for i in l:
 for i in l2:
     i.sort()
 
-n=int(input("enter the number of word you want to guess(limit 3-7):  "))
+n=int(input("enter the length of word you want to guess(limit 3-7):  "))
 while True:
     if 2<n<8:
         break
@@ -32,7 +32,7 @@ while turn>0:
     print("guess the char:  ")
     char=input("")
     l1.append(char)
-    print(f"gussed words =={l1}")
+    print(f"gussed words =={l1} and the common word is {list(set(l[n-3])&set(l1))}")
     l1.sort()
 
     if set(l1)&set(l2[n-3])==set(l2[n-3]):
